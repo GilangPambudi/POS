@@ -16,3 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::prefix('category')->group(function () {
+    Route::get('food-beverage', 'ProductController@foodAndBeverage');
+    Route::get('beauty-health', 'ProductController@beautyAndHealth');
+    Route::get('home-care', 'ProductController@homeCare');
+    Route::get('baby-kid', 'ProductController@babyAndKid');
+});
