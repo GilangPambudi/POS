@@ -8,21 +8,25 @@ class ProductController extends Controller
 {
     public function foodBeverage()
     {
-        return "Menampilkan produk dalam kategori makanan dan minuman";
+        $category = 'Food & Beverage';
+        return view('category.category')->with('category', $category);
     }
 
     public function beautyHealth()
     {
-        return "Menampilkan produk dalam kategori kecantikan dan kesehatan";
+        $category = 'Beauty & Health';
+        return view('category.category')->with('category', $category);
     }
 
     public function homeCare()
     {
-        return "Menampilkan produk dalam kategori perawatan rumah";
+        $category = 'Home Care';
+        return view('category.category')->with('category', $category);
     }
 
     public function babyKid()
     {
-        return "Menampilkan produk dalam kategori bayi dan anak-anak";
+        $category = 'Baby and Kid';
+        return view('category.category')->with('category', $category);
     }
 }
