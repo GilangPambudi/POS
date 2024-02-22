@@ -6,12 +6,12 @@ use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
-    public function foodAndBeverage()
+    public function foodBeverage()
     {
         return "Menampilkan produk dalam kategori makanan dan minuman";
     }
 
-    public function beautyAndHealth()
+    public function beautyHealth()
     {
         return "Menampilkan produk dalam kategori kecantikan dan kesehatan";
     }
@@ -21,7 +21,7 @@ class ProductController extends Controller
         return "Menampilkan produk dalam kategori perawatan rumah";
     }
 
-    public function babyAndKid()
+    public function babyKid()
     {
         return "Menampilkan produk dalam kategori bayi dan anak-anak";
     }
